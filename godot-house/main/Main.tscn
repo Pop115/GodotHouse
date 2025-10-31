@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b85o6kg56c1sp"]
+
+[ext_resource type="PackedScene" uid="uid://dqd1n8jj6r7u7" path="res://world/Apartment.tscn" id="1_wbnyf"]
+[ext_resource type="Script" uid="uid://cvmoc0eip7xcb" path="res://network/MultiplayerManager.gd" id="2_5kcm4"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Apartment" parent="." instance=ExtResource("1_wbnyf")]
+
+[node name="MultiplayerManager" type="Node" parent="."]
+script = ExtResource("2_5kcm4")
