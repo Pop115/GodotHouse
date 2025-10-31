@@ -8,9 +8,6 @@ const PORT = 7000
 
 	
 func _ready():
-	$HostButton.pressed.connect(_on_host_pressed)
-	$JoinButton.pressed.connect(_on_join_pressed)
-	
 	%MapFileSelectDialog.file_selected.connect(func(path):
 		on_file_selected(path);
 	)
@@ -40,3 +37,7 @@ func _on_join_pressed():
 		return
 	get_tree().multiplayer.multiplayer_peer = peer
 	get_tree().change_scene_to_file("res://main/Main.tscn")
+
+
+func _on_join_button_pressed() -> void:
+	pass # Replace with function body.
