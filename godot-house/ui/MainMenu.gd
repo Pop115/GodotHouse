@@ -3,8 +3,8 @@ extends Control
 
 const PORT = 7000
 
-@onready var name_input = $NameInput
-@onready var ip_input = $IPInput
+@onready var name_input = %NameInput
+@onready var ip_input = %IPInput
 
 	
 func _ready():

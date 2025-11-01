@@ -46,7 +46,9 @@ text = "Créer une partie"
 [node name="MapFileSelectDialog" type="FileDialog" parent="Control/VBoxContainer/VBoxContainer/HostButton"]
 unique_name_in_owner = true
 oversampling_override = 1.0
-filters = PackedStringArray("*.obj")
+title = "Open a File"
+file_mode = 0
+access = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
 layout_mode = 2
